@@ -16,7 +16,7 @@ let joystickState = { leftX: 0, leftY: 0, rightX: 0, rightY: 0, specialAction: f
         pitch: scaleValue(joystickState.leftY),
         yaw: scaleValue(joystickState.rightX),
         throttle: scaleValue(joystickState.rightY),
-        special_action: joystickState.specialAction // Include switch state
+        AUX1: joystickState.specialAction // Include switch state
       };
 
       console.log("Sending data:", data);
